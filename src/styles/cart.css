@@ -1,0 +1,11 @@
+.container-card{
+    display: flex;
+    flex-basis: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    Height: 350px;
+    background: #F7F7F7;
+    border-radius: 25px;
+} 

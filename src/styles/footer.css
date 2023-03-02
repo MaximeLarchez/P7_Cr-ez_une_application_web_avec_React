@@ -1,0 +1,35 @@
+.container-footer{
+    
+    display: flex;
+    background: #000000;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.container-footer figure{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.container-footer img{
+    filter:brightness(10);
+    text-align: center;
+    height: 39px;
+}
+
+.container-footer div{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+
+    
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+    
+}
