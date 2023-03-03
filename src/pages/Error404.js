@@ -1,18 +1,22 @@
 import React from 'react';
 import '../styles/error.css';
+import { NavLink } from 'react-router-dom';
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+
+
 
 
 
 const Error404 = () => {
     return (
         <div>
-            <Header/>
+            <Header />
             <h1 className='error'>404</h1>
             <p>Oups ! La page que vous demandez n'existe pas.</p>
-            <Footer/>
+            <NavLink to='/'>
+                <p className='returnHomePage'>Retourner sur la page d'accueil</p>
+            </NavLink>
         </div>
     );
 };
