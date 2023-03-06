@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './scss/App.scss';
-import data from './datas/data';
+
 
 import Logement from './pages/Fiche-logement'
 import Error from'./pages/Error404'
@@ -11,7 +11,7 @@ import Home from './pages/Home';
 
 
 function App() {
-    // data.forEach(data => console.log(data.cover))
+    
     return (
         <BrowserRouter>
             <Routes>

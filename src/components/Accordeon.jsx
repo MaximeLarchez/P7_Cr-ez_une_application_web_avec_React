@@ -15,7 +15,10 @@ const Accordeon = ({title, content}) => {
     return (
         <div className={`accordeon ${active && "active"}`}>
             <div className='accordeon_Title' onClick={handleToggle}><span>{title}<img src={ArrowDown} alt='arrowDown'/></span></div>
-            <div className='accordeon_content'>{content}</div>
+            <div className='accordeon_content_bg'>
+                <div className='accordeon_content'>{content}</div>
+            </div>
+            
         </div>
     );
 };

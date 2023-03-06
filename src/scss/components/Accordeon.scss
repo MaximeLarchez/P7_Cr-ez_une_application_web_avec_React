@@ -2,14 +2,15 @@
 .Accordeon_About{
     justify-content: center;
     .false{
-        background-color: lightblue;
+       
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
     .active{
-        background-color: lightgreen;
+       
         display: flex;
+        
         justify-content: center;
         flex-wrap: wrap;
         text-align: center;
@@ -20,12 +21,12 @@
 .accordeon_Title{
     border: 1px solid #FF6060;
     display: flex;
-    width: 60%;
+    width: 80%;
     align-items: center;
     justify-content: left;
     background-color: #FF6060;
     padding: 10px;
-    margin-bottom: 30px;
+    // margin-bottom: 20px;
     border-radius: 5px;
     position: relative;
     color: white;
@@ -57,4 +58,15 @@
     padding: 10px;
    
     }
+}
+
+.accordeon_content_bg{
+   
+    display: flex;
+    flex-basis: 80%;
+    font-size: 24px;
+   .accordeon_content{
+     margin: 20px;
+     font-family: 🇲🇸 ;
+   }
 }
