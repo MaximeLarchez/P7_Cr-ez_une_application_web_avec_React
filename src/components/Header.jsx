@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
-import '../styles/header.css';
+import '../scss/components/Header.scss';
 import { NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
 

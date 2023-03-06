@@ -5,6 +5,7 @@ const logement = () => {
     return (
         <div>
             <Header/>
+            <div>coucou tu es sur la page de ton produit</div>
         </div>
     );
 };

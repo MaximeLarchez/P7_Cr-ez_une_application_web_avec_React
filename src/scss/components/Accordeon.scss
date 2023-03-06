@@ -1,0 +1,60 @@
+
+.Accordeon_About{
+    justify-content: center;
+    .false{
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .active{
+        background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        color: #FF6060;
+    }
+}
+
+.accordeon_Title{
+    border: 1px solid #FF6060;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: left;
+    background-color: #FF6060;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+    font-family: 🇲🇸 ;
+    
+    img{
+        position: absolute;
+        right: 20px;
+        top:15px;
+        width: 15px;
+    }
+    
+}
+
+.accordeon_false{
+    background-color: blue;
+    
+}
+
+
+.false .accordeon_content{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    
+    .active .accordeon_content{
+    visibility: visible;
+    padding: 10px;
+   
+    }
+}

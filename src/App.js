@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './scss/App.scss';
+import data from './datas/data';
 
 import Logement from './pages/Fiche-logement'
 import Error from'./pages/Error404'
 import About from './pages/About';
 import Home from './pages/Home';
 
-// import Cart from './Cart';
 
 
 function App() {
+    // data.forEach(data => console.log(data.cover))
     return (
         <BrowserRouter>
             <Routes>

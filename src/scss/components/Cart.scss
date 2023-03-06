@@ -1,0 +1,56 @@
+@import "../main.scss";
+
+.container-card{
+    display: flex;
+    flex-basis: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: center; 
+    flex-wrap: wrap;
+    border-radius: 25px;
+    
+    .container-card-bg{
+        display: flex;
+        border-radius: 25px;
+        width: 95%;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        background: #F7F7F7;
+        justify-content: center;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .card{
+        display: flex;
+        flex-basis: 32%;
+        justify-content: center;
+       
+        
+    }
+    .container-card-img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        position: relative;
+    }
+    
+    .img{
+        width: 100%;
+        height: 400px;
+        
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(80%);
+    }
+
+    h2{
+        font-family: 'Montserrat';
+        font-size: 18px;
+        position: absolute;
+        bottom: 10px;
+        padding-left: 10px;
+        color: #F7F7F7;
+        width: 50%;
+        
+    }
+} 
