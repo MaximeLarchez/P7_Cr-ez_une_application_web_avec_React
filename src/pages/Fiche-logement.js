@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
+import SlideShow from '../components/SlideShow';
 
 const logement = () => {
     return (
         <div>
             <Header/>
-            <div>coucou tu es sur la page de ton produit</div>
+            <SlideShow/>
         </div>
     );
 };
