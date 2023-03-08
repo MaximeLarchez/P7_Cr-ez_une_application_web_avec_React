@@ -12,7 +12,7 @@ function Card(){
             <div className='container-card-bg'>
                 {data.map((data) =>(
                     <div className="card" key={data.id}>
-                        <NavLink to = '/logement'>
+                        <NavLink to = {`/logement/${data.id}`}>
                             <figure className='container-card-img'>
                                 <img className="img" src={data.cover}  alt="logement" /> 
                                 <h2>{data.title}</h2>
