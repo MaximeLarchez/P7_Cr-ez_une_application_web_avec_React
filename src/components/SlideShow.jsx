@@ -6,11 +6,11 @@ import arrowLeft from '../assets/ArrowLeft1.svg';
 import arrowRight from '../assets/ArrowRight.png';
 import getIdFromUrl from '../Javascript/logement';
 
-
+console.log(arrowLeft)
 const SlideShow = () => {
     const id = getIdFromUrl();
     const logementInfos = data.find(logement => logement.id == id)
-    const pictures = logementInfos.pictures; // Mettre dans le tableau l'id ? comment faire ? 
+    const pictures = logementInfos.pictures; 
 
     const Propriete = {
         duration: 100,

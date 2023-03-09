@@ -1,25 +1,45 @@
+.Container-Accordeon {
 
-
-
-.Container-Accordeon{
-    
     display: flex;
     flex-basis: 100%;
     justify-content: center;
-    
-    
-    .Description{
-       
+  
+
+
+    .Description {
         flex-basis: 50%;
         margin-left: 40px;
-    }
-    .Equipement{
        
+
+        .accordeon_Title{
+            
+            width: 92%;
+        }
+        .accordeon_content {
+            
+            flex-basis: 90%;
+            color: #FF6060;
+        }
+
+    }
+
+    .Equipement {
         flex-basis: 50%;
         justify-content: center;
         margin-left: 40px;
         
         
+        .accordeon_Title{
+            width: 92%;
+            
+        }
+        
+        .accordeon_content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 90%;
+            color:#FF6060 ;
+        }
+
     }
 }
-
