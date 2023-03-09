@@ -1,0 +1,25 @@
+
+
+
+.Container-Accordeon{
+    
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    
+    
+    .Description{
+       
+        flex-basis: 50%;
+        margin-left: 40px;
+    }
+    .Equipement{
+       
+        flex-basis: 50%;
+        justify-content: center;
+        margin-left: 40px;
+        
+        
+    }
+}
+

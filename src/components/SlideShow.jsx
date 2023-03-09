@@ -4,20 +4,23 @@ import { Carousel } from 'react-responsive-carousel';
 import data from '../datas/data';
 import arrowLeft from '../assets/ArrowLeft1.svg';
 import arrowRight from '../assets/ArrowRight.png';
-
+import getIdFromUrl from '../Javascript/logement';
 
 
 const SlideShow = () => {
-    const pictures = data[1].pictures; // Mettre dans le tableau l'id ? comment faire ? 
+    const id = getIdFromUrl();
+    const logementInfos = data.find(logement => logement.id == id)
+    const pictures = logementInfos.pictures; // Mettre dans le tableau l'id ? comment faire ? 
 
     const Propriete = {
         duration: 100,
         transitionDuration: 200,
         autoPlay: true,
-        showIndicators: false,
+        // showIndicators: false,
         infiniteLoop: true,
         prevArrow: <img src={arrowLeft} alt='Previous'/>,
         nextArrow: <img src={arrowRight} alt='Next' />,
+        
     }
 
     return (
