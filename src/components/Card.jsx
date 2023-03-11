@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../scss/components/Cart.scss';
+import '../scss/components/Card.scss';
 import data from '../datas/data'
 import { NavLink } from 'react-router-dom';
 

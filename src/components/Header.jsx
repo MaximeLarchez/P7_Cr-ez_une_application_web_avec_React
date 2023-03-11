@@ -9,8 +9,8 @@ function Header() {
         <header className='Header'>
             <div className='Header-container'>
                 <NavLink to='/'>
-                    <figure>
-                        <img src={logo} alt='logo Entreprise Kasa' />
+                    <figure className='Container_img'>
+                        <img className='Logo' src={logo} alt='logo Entreprise Kasa' />
                     </figure>
                 </NavLink>
                 <Navigation />

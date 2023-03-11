@@ -42,4 +42,17 @@
         }
 
     }
+
+    .Equipement-Container{
+     
+     display: flex;
+     flex-basis: 100%;
+     flex-wrap: wrap;
+     justify-content: left;
+     padding-left: 0;
+    }
+    .Equipement{
+        text-align: left;
+        list-style: none;
+    }
 }

@@ -4,7 +4,8 @@ main {
 	display: flex;
 	flex-basis: 100%;
 	flex-wrap: wrap;
-	figure {
+
+	.img-bg {
 		img {
 			display: flex;
 			object-fit: cover;
@@ -19,18 +20,20 @@ main {
 		}
 	}
 }
+
 .container-img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	text-align: center;
 	height: 300px;
+
 	h1 {
-		width: 94%;
+		flex-basis: 92%;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 48px;
+		font-size: 46px;
 		position: relative;
 		left: 3%;
 		top: -70%;
@@ -39,9 +42,54 @@ main {
 		justify-content: center;
 		text-align: center;
 		color: #FFFFFF;
+		
+		
 	}
 }
+
 .img-bg {
 	flex-basis: 100%;
 	justify-content: center;
+}
+
+
+@media screen and (max-width:700px) {
+	main {
+		
+		
+		
+
+		.container-img {
+			background-color: lightblue;
+
+			.img-bg {
+
+				
+				background-color: lightgreen;
+				
+				.img {
+					
+					background-color: lightsalmon;
+				}
+			}
+
+			h1{
+				// display: flex;
+				// flex-wrap: wrap;
+				// flex-basis: 80%;
+				// justify-content: center;
+				
+				.titleBanner{
+				// display: flex;
+				// flex-basis: 100%;
+				// color: red;
+
+				
+			}
+			}
+			
+		}
+	}
+
+	
 }

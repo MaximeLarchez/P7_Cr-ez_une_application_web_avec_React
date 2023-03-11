@@ -20,6 +20,7 @@ function App() {
                 <Route path='/about' element = {<About/>}/>
                 <Route path='/logement/:id' element = {<Logement/>}/>
                 <Route path='*' element = {<Error/>} />
+                
             </Routes>
         </BrowserRouter>
     )

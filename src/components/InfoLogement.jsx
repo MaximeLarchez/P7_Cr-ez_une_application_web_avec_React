@@ -30,7 +30,7 @@ const InfoLogement = () => {
                 <img className='ProfilPicture' src={profilPicture} alt={name} />
             </div>
             
-            <StarRating rating={rating} setRating={setRating} />
+            {/* <StarRating/> */}
         </div>
     );
 };
