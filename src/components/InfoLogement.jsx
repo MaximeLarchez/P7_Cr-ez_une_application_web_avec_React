@@ -3,7 +3,7 @@ import data from '../datas/data';
 import getIdFromUrl from '../Javascript/logement';
 import '../scss/components/InfoLogement.scss'
 import StarRating from './StarRating';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 const InfoLogement = () => {
@@ -14,7 +14,7 @@ const InfoLogement = () => {
     const name = host.name;
     const profilPicture = host.picture;
 
-    const [rating, setRating] = useState(0);
+    // const [rating, setRating] = useState(0);
 
     return (
         <div className='InfoContainer'>
@@ -30,7 +30,7 @@ const InfoLogement = () => {
                 <img className='ProfilPicture' src={profilPicture} alt={name} />
             </div>
             
-            {/* <StarRating/> */}
+            <StarRating/>
         </div>
     );
 };

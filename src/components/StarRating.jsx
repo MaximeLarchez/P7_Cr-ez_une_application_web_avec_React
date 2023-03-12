@@ -1,34 +1,37 @@
-// import React from 'react';
-// import data from '../datas/data';
-// import StarActive from '../assets/StarActive.png';
-// import StarInactive from '../assets/StarInactive.png';
-// import getIdFromUrl from '../Javascript/logement';
+import React from 'react';
+import data from '../datas/data';
+import StarActive from '../assets/StarActive.png';
+import StarInactive from '../assets/StarInactive.png';
+import getIdFromUrl from '../Javascript/logement';
+import '../scss/components/StarRating.scss'
 
-// const id = getIdFromUrl();
-//     const RatingInfos = data.find(rating => rating.id === id)
-//     const Rating = RatingInfos.rating
-//     console.log(Rating)
 
-// const StarRating = ({Rating}) => {
-    
 
-//     const MaxRating = 5;
-//     const FullStar = StarActive
-//     const EmptyStar = StarInactive
+const StarRating = () => {
+    const id = getIdFromUrl();
+    const RatingInfos = data.find(rating => rating.id === id)
+    const Rating = RatingInfos.rating
 
-//     const Stars = []
+    const MaxRating = 5;
+    const FullStar = StarActive
+    const EmptyStar = StarInactive
 
-// for(let i = 0; i < MaxRating; i++){
-//     let Star;
+    const Stars = []
 
-//     if(i < Rating){
-//         Star = FullStar
-//     }else{
-//         Star = EmptyStar
-//     }
-    
-//     Stars.push(<i key={i} className={Star}></i>);
-// }
-// };
+    for (let i = 0; i < MaxRating; i++) {
+        let Star;
 
-// export default StarRating;
+        if (i < Rating) {
+            Star = FullStar
+        } else {
+            Star = EmptyStar
+        }
+
+        Stars.push(<img key={i} src={Star} alt="star" />);
+    }
+    return <div className='Star'>
+        {Stars}
+    </div>;
+};
+
+export default StarRating;

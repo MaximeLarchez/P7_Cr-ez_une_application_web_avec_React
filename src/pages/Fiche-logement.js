@@ -45,7 +45,7 @@ const logement = () => {
                 </div>
                 <Footer />
 
-            // </div>
+             </div>
 
         )
     }
