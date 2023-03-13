@@ -56,3 +56,45 @@
         list-style: none;
     }
 }
+
+@media screen and (max-width:1010px){
+
+    .Container-Accordeon{
+       
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .Description{
+            margin: 0;
+            flex-basis: 90%;
+            .accordeon_Title{
+            
+               
+            }
+            .accordeon_content {
+                flex-basis: 90%;
+                
+            }
+        }
+        .Equipement{
+            margin: 0;
+            flex-basis: 90%;
+             .accordeon_content {
+                flex-basis: 90%;
+                
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

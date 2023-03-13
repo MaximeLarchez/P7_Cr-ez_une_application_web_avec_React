@@ -1,13 +1,13 @@
 import React from 'react';
-import '../scss/components/Banner.scss';
+import '../scss/components/BannerHome.scss';
 import img from '../assets/img-bg-home.png';
 
 
 function BannerHome() {
     return (
         <main>
-            <section className='container-img'>
-                <figure className='img-bg'>
+            <section className='container-img-Home'>
+                <figure className='img-bg-Home'>
                     <img src={img} alt='Paysage Montagneux' />
                 </figure>
                 <h1>

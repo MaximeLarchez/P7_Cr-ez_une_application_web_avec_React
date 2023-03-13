@@ -14,7 +14,7 @@ const Error404 = () => {
             <Header />
             <div className='Content_Error'>
                 <h1 className='error'>404</h1>
-                <p>Oups ! La page que vous demandez n'existe pas.</p>
+                <p className='MessageError'>Oups ! La page que vous demandez n'existe pas.</p>
             </div>
 
             <NavLink to='/'>

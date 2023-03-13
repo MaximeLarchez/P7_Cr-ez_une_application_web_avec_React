@@ -1,92 +1,135 @@
-.Container{
+.Container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-   
+
+
 
 
     .carousel {
         display: flex;
         justify-content: center;
         width: 95%;
-       position: relative;
+        position: relative;
         height: 430px;
-      
-       
-    
+
+
+
         .carousel-container {
-            
+
             display: flex;
             flex-basis: 95%;
-             height: 430px;
-             
+            height: 430px;
+
             border-radius: 25px;
-    
+
             img {
-               
+
                 border-radius: 25px;
                 object-fit: cover;
-              width: 100%;
-                
+                width: 100%;
+
             }
         }
     }
+
     .Button {
         z-index: 1;
-    
-       .Previous {
+
+        .Previous {
             position: absolute;
             left: 50px;
             top: 290px;
             background: none;
             border: none;
-            
-    
-                
-            }
-    
+
+
+
+        }
+
         .Next {
             position: absolute;
             right: 50px;
             top: 290px;
             background: none;
             border: none;
-            
+
+        }
+    }
+
+    .carousel-container {
+
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel-container.active {
+        opacity: 1;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .carousel-container.hidden {
+        display: none;
+    }
+
+    .NumberPictures {
+        position: absolute;
+        bottom: 35%;
+        left: 50%;
+
+        margin: 0;
+        opacity: 1;
+        z-index: 1;
+        color: black;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+
+    .Container {
+
+        .Button {
+
+            .Previous {
+
+                top: 210px;
+                left: 10px;
+
+                .ArrowPrevious {
+                    width: 4vw;
+                }
+            }
+
+            .Next {
+                top: 210px;
+                right: 10px;
+
+                .ArrowNext {
+                    width: 4vw;
+                }
             }
         }
-    
-        .carousel-container {
-    
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
+
+        .carousel {
+            height: 260px;
+
+            .carousel-container {
+                height: 255px;
+                border-radius: 10px;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
         }
-    
-        .carousel-container.active {
-            opacity: 1;
-            z-index: 1;
-            position: absolute;
-            width: 100%;
-            object-fit: cover;
-    
-        }
-    
-        .carousel-container.hidden {
-           display: none;
-        }
-    
-        .NumberPictures{
-            position: absolute;
-            bottom: 35%;
-            left: 50%;
-            
-            margin: 0;
-            opacity: 1;
-            z-index: 1;
-            color: black;
-            
-        }
-    
+    }
 }

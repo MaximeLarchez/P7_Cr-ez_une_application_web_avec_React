@@ -9,7 +9,7 @@ function Footer(){
            <figure>
                 <img src={logo} alt='logo de lentreprise Kasa'/>
            </figure>
-           <div>
+           <div className='Copyright'>
                 © 2020 Kasa. All rights reserved
            </div>
         </footer>

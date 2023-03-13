@@ -5,7 +5,12 @@
     position: absolute;
     bottom: 20px;
     right: 45px;
-    .active{
-       
+}
+
+@media screen and (max-width:1010px) {
+    .Star{
+        left: 15px;
+        bottom: 10px;
+        width: 200px;
     }
 }

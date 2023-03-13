@@ -33,17 +33,25 @@ p {
 
 
 
-// @media screen and (max-width:768px){
-// .Content_Error{
-// 	background-color: lightblue;
+@media screen and (max-width:768px){
+.Content_Error{
 
-// 	p{
-// 		color: blue;
-// 		display: flex;
-// 		flex-basis: 100%;
-// 		justify-content: center;
-// 	}
-// }	
+margin-top: 100px;
+	.error{
+		font-size: 25vw;
+		
+	}
+	.MessageError{
+		display: flex;
+		text-align: center;
+		font-size: 25px;
+		
+	}
+}	
 	
-	
-// }
+.returnHomePage{
+	display: flex;
+		text-align: center;
+		font-size: 18px;
+}
+}

@@ -39,10 +39,10 @@ const Carousel = ({ Pictures }) => {
 
       <div className='Button'>
         <button className='Previous' onClick={handlePrevClick}>
-          <img src={ArrowLeft} alt="Previous" />
+          <img className='ArrowPrevious' src={ArrowLeft} alt="Previous" />
           </button>
         <button className='Next' onClick={handleNextClick}>
-        <img src={ArrowRight} alt="Next" />
+        <img className='ArrowNext' src={ArrowRight} alt="Next" />
           </button>
       </div>
       <p className='NumberPictures'></p>

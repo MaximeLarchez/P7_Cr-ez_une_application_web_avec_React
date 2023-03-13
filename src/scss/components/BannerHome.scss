@@ -1,11 +1,9 @@
-@import '../main.scss';
-
 main {
 	display: flex;
 	flex-basis: 100%;
 	flex-wrap: wrap;
 
-	.img-bg {
+	.img-bg-Home {
 		img {
 			display: flex;
 			object-fit: cover;
@@ -21,7 +19,7 @@ main {
 	}
 }
 
-.container-img {
+.container-img-Home {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 100%;
@@ -47,7 +45,7 @@ main {
 	}
 }
 
-.img-bg {
+.img-bg-Home {
 	flex-basis: 100%;
 	justify-content: center;
 }
@@ -55,37 +53,44 @@ main {
 
 @media screen and (max-width:700px) {
 	main {
-		
-		
-		
+		.container-img-Home {
+			background-color: red;
+			display: flex;
+			flex-basis: 100%;
+			
+			height: 130px;
 
-		.container-img {
-			background-color: lightblue;
-
-			.img-bg {
-
-				
+			.img-bg-Home {
+				// position: relative;
+				width: 90%;
 				background-color: lightgreen;
+				display: flex;
+				align-items: center;
+				margin: 0 auto;
 				
-				.img {
-					
+				img {
+					justify-content: center;
 					background-color: lightsalmon;
+					height: 130px;
+					border-radius: 10px;
+					width: 95%;
+					
+					
 				}
 			}
 
 			h1{
-				// display: flex;
-				// flex-wrap: wrap;
-				// flex-basis: 80%;
-				// justify-content: center;
 				
-				.titleBanner{
-				// display: flex;
-				// flex-basis: 100%;
-				// color: red;
+				// top: 135px;
+				// left: 55px;
+				font-size: 6vw;
+				height: 50px;
+				margin: 0 ;
+				
+				
+				
 
 				
-			}
 			}
 			
 		}

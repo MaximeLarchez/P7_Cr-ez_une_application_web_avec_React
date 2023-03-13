@@ -1,23 +1,23 @@
-
-.InfoContainer{
+.InfoContainer {
     position: relative;
 }
 
 
-.ContainerUserInfo{
-    
+.ContainerUserInfo {
+
     display: flex;
     justify-content: right;
-    
-    .HostName{
+
+    .HostName {
         position: absolute;
         top: 10px;
         right: 120px;
         font-size: 18px;
-       
+
         width: min-content;
     }
-    .ProfilPicture{
+
+    .ProfilPicture {
         position: absolute;
         top: 0px;
         right: 40px;
@@ -27,7 +27,7 @@
         width: 70px;
     }
 
-    
+
 }
 
 
@@ -47,27 +47,80 @@
     font-size: 18px;
     font-family: 🇲🇸;
     margin: 0px 0px 20px 40px;
+
 }
 
 .Container-tags {
- 
+
     display: flex;
     justify-content: first baseline;
     flex-wrap: wrap;
     width: 30%;
     flex-basis: 100%;
     margin: 0px 0px 20px 0px;
+
     .Tags {
         background-color: #FF6060;
         display: flex;
         color: white;
-        padding: 5px 15px 5px 15px ;
+        padding: 5px 15px 5px 15px;
         border-radius: 10px;
-        font-family: 🇲🇸 ;
+        font-family: 🇲🇸;
         margin-right: 10px;
         margin-top: 5px;
     }
-    
-   
+
+
 }
 
+@media screen and (max-width:1010px) {
+
+
+    .Title {
+        margin: 0;
+        margin-left: 15px;
+
+    }
+
+    .Location {
+
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .Container-tags {
+
+        width: 100%;
+        padding: 15px;
+
+        .Tags {}
+    }
+
+    .ContainerUserInfo {
+
+        height: 50px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+
+        .HostName {
+            
+           position: static;
+
+          
+            margin: 0;
+
+        }
+
+        .ProfilPicture {
+            position: static;
+            object-fit: cover;
+           
+            
+           
+            margin: 0;
+            width: 50px;
+        }
+
+
+    }
+}

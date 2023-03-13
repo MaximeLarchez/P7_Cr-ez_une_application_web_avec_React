@@ -1,5 +1,5 @@
 import React from 'react';
-import '../scss/components/Banner.scss';
+import '../scss/components/BannerAbout.scss';
 import img from '../assets/img-bg-about.png';
 
 
