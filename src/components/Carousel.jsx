@@ -35,15 +35,16 @@ const Carousel = ({ Pictures }) => {
 
       </div>
 
-      <div className='Button'>
-        <button className='Previous' onClick={handlePrevClick}>
-          <img className='ArrowPrevious' src={ArrowLeft} alt="Previous" />
-        </button>
-        <button className='Next' onClick={handleNextClick}>
-          <img className='ArrowNext' src={ArrowRight} alt="Next" />
-        </button>
-      </div>
-
+      {Pictures.length > 1 ? (
+        <div className="Button">
+          <button className="Previous" onClick={handlePrevClick}>
+            <img className="ArrowPrevious" src={ArrowLeft} alt="Previous" />
+          </button>
+          <button className="Next" onClick={handleNextClick}>
+            <img className="ArrowNext" src={ArrowRight} alt="Next" />
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 };
