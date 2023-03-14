@@ -3,7 +3,6 @@
 
 .Header {
 	display: flex;
-	// flex-basis: 100%;
 	flex-basis: 100%;
 	justify-content: center;
 
@@ -16,8 +15,6 @@
 		color: lightcoral;
 
 		.Container_img {
-
-
 			.Logo {
 				width: 210px;
 			}
@@ -47,13 +44,11 @@ a {
 			font-style: normal;
 			font-weight: 500;
 			font-size: 24px;
-			// line-height: 142.6%;
 			list-style: none;
 			margin-right: 40px;
 		}
 
 		.About {
-
 			white-space: nowrap
 		}
 	}
@@ -66,65 +61,37 @@ a {
 }
 
 
-
-
 @media screen and (max-width:573px) {
 	.Header {
-		
 		display: flex;
 		flex-basis: 100%;
-		// background-color: blue;
 		
 		.Header-container {
-		// background-color: lightgreen;
 			display: flex;
 			
-			
-
 			.Container_img {
-				// background-color: lightseagreen;
 				display: flex;
 				
-				
-
-
 				.Logo {
 					width: 35vw;
-					
-					// background-color: lightpink;
-
 				}
 			}
 		}
-
-
-
 	}
 
 	.navigation {
 		display: flex;
 		justify-content: left;
-		// background-color: lightsalmon;
-
-		ul {
 		
+		ul {
 			justify-content: center;
 			width: 65%;
-			// background-color: lightcyan;
 			
-
-
 			li {
-				// background-color: lightgrey;
 				font-size: 4vw;
 				text-transform: uppercase;
 				margin-right: 15px;
 			}
 		}
 	}
-
-
-
-
-
 }

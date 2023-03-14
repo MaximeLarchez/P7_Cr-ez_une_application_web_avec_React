@@ -16,28 +16,23 @@ const logement = () => {
     const id = getIdFromUrl();
     const logementInfos = data.find(logement => logement.id === id)
 
-    const equipements = 
-    <ul className='Equipement-Container'>
-        {logementInfos.equipments.map((equipement, index) => (
-      <li key={index} className='Equipement'>
-        {equipement}
-      </li>
-    ))}
-    </ul>
-    
-    let Pictures = logementInfos.pictures
-    const description = logementInfos.description
-    const Rating = logementInfos.rating
-    
-    
-    
     if (logementInfos !== undefined) {
+        const equipements =
+            <ul className='Equipement-Container'>
+                {logementInfos.equipments.map((equipement, index) => (
+                    <li key={index} className='Equipement'>
+                        {equipement}
+                    </li>
+                ))}
+            </ul>
 
+        let Pictures = logementInfos.pictures
+        const description = logementInfos.description
 
         return (
             <div>
                 <Header />
-                <Carousel Pictures={Pictures}/>
+                <Carousel Pictures={Pictures} />
                 <InfoLogement />
                 <div className='Container-Accordeon'>
                     <div className="Description"><Accordeon title='Description' content={description} /></div>
@@ -45,13 +40,14 @@ const logement = () => {
                 </div>
                 <Footer />
 
-             </div>
+            </div>
 
         )
     }
-    else{
-        <Error404/>
-        console.log(id)
+    else {
+        return (<Error404 />)
+
+
     }
 
 

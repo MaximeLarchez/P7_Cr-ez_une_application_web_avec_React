@@ -24,7 +24,8 @@
         display: flex;
         flex-basis: 32%;
         justify-content: center;
-       >a{
+       
+        >a{
         width: 100%;
        }
         
@@ -60,21 +61,18 @@
     .container-card{
         display: flex;
         max-width: 95%;
-        // background-color: lightsalmon;
+        
         .container-card-bg{
             flex-wrap: wrap;
             background-color: white;
+            
 
             .card{
-                // background-color: lightblue;
                 flex-basis: 100%;
                 flex-wrap: wrap;
            
                 .container-card-img{
                     width: 90vw;
-                    
-                    
-                    // background-color: lightpink;
                 }
             }
         }

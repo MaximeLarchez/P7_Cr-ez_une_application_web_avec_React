@@ -1,26 +1,19 @@
 .Container-Accordeon {
-
     display: flex;
     flex-basis: 100%;
     justify-content: center;
-  
-
-
+    
     .Description {
         flex-basis: 50%;
         margin-left: 40px;
        
-
         .accordeon_Title{
-            
             width: 92%;
         }
         .accordeon_content {
-            
             flex-basis: 90%;
             color: #FF6060;
         }
-
     }
 
     .Equipement {
@@ -28,10 +21,8 @@
         justify-content: center;
         margin-left: 40px;
         
-        
         .accordeon_Title{
             width: 92%;
-            
         }
         
         .accordeon_content {
@@ -67,11 +58,7 @@
         .Description{
             margin: 0;
             flex-basis: 90%;
-            .accordeon_Title{
-            
-               
-            }
-            .accordeon_content {
+           .accordeon_content {
                 flex-basis: 90%;
                 
             }
@@ -79,22 +66,9 @@
         .Equipement{
             margin: 0;
             flex-basis: 90%;
-             .accordeon_content {
+            .accordeon_content {
                 flex-basis: 90%;
-                
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
