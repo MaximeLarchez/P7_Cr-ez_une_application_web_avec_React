@@ -5,12 +5,12 @@ import getIdFromUrl from '../Javascript/logement';
 import ArrowLeft from '../assets/ArrowLeft.png';
 import ArrowRight from '../assets/ArrowRight.png';
 
-const id = getIdFromUrl();
-const logementInfos = data.find(logement => logement.id === id)
-const NumberPictures = logementInfos.pictures.length
+// const id = getIdFromUrl();
+// const logementInfos = data.find(logement => logement.id === id)
+// const NumberPictures = logementInfos.pictures.length
 
-console.log(NumberPictures)
-console.log(logementInfos.pictures)
+// console.log(NumberPictures)
+// console.log(logementInfos.pictures)
 
 const Carousel = ({ Pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +34,7 @@ const Carousel = ({ Pictures }) => {
             key={index}
             className={`carousel-container ${index === currentIndex ? "active" : "hidden"}`}>
             <img src={Picture} alt={`PhotoNumber ${index}`} />
-            <p className='NumberPictures'>/{NumberPictures}</p>
+            {/* <p className='NumberPictures'>/{NumberPictures}</p> */}
             {/* <p className='NumberPictures'>${Picture[index]}</p> */}
             
           </div>
