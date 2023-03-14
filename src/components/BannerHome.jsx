@@ -10,10 +10,10 @@ function BannerHome() {
                 <figure className='img-bg-Home'>
                     <img src={img} alt='Paysage Montagneux' />
                     <div className='Container-h1'>
-                    <h1>
-                        Chez vous, partout et ailleurs
-                    </h1>
-                </div>
+                        <h1>
+                            Chez vous, partout et ailleurs
+                        </h1>
+                    </div>
                 </figure>
                 
 
