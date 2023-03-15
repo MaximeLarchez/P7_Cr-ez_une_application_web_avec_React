@@ -15,13 +15,18 @@
             flex-basis: 95%;
             height: 430px;
             border-radius: 25px;
-            
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+
             img {
                 border-radius: 25px;
                 object-fit: cover;
                 width: 100%;
                 position: relative;
             }
+
             .NumberPictures {
                 position: absolute;
                 bottom: 0%;
@@ -33,11 +38,23 @@
                 font-size: 2vw;
             }
         }
+
+        .carousel-container.active {
+            opacity: 1;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-container.hidden {
+            display: none;
+        }
     }
 
     .Button {
         z-index: 1;
-        
+
         .Previous {
             position: absolute;
             left: 50px;
@@ -52,29 +69,8 @@
             top: 290px;
             background: none;
             border: none;
-
         }
     }
-    .carousel-container {
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .carousel-container.active {
-        opacity: 1;
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .carousel-container.hidden {
-        display: none;
-    }
-
-   
 }
 
 @media screen and (max-width:768px) {
@@ -83,10 +79,12 @@
             .Previous {
                 top: 210px;
                 left: 10px;
+
                 .ArrowPrevious {
                     width: 4vw;
                 }
             }
+
             .Next {
                 top: 210px;
                 right: 10px;
@@ -108,7 +106,7 @@
                     border-radius: 10px;
                     position: relative;
                 }
-               
+
             }
         }
     }

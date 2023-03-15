@@ -1,4 +1,4 @@
-@import "./abstracts/variables";
+
 @import "./components/BannerAbout.scss";
 @import "./components/Card.scss";
 @import "./components/Footer.scss";
@@ -8,4 +8,5 @@
 @import "./components/InfoLogement.scss";
 @import "./components/Carousel.scss";
 @import "./components//StarRating.scss";
-@import"./components//BannerHome.scss"
+@import"./components//BannerHome.scss";
+@import "./pages/Fiche-logement.scss";

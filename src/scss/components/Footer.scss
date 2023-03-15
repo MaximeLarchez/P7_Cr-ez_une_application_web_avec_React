@@ -11,14 +11,15 @@
 		flex-wrap: wrap;
 		flex-basis: 100%;
 		justify-content: center;
+		img {
+			filter: brightness(10);
+			text-align: center;
+			height: auto;
+			width: 122px;
+		}
 	}
-	img {
-		filter: brightness(10);
-		text-align: center;
-		height: auto;
-		width: 122px;
-	}
-	div {
+	
+	.Copyright {
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -36,7 +37,10 @@
 
 @media screen and (max-width:700px){
 	.container-footer{
-		div{
+		display: flex;
+		justify-content: center;
+		
+		.Copyright{
 			font-size: 3.5vw;
 		}
 	}
