@@ -10,12 +10,13 @@
   flex-basis: 100%;
   justify-content: center;
 }
-.container-footer img {
+.container-footer figure img {
   filter: brightness(10);
   text-align: center;
-  height: 39px;
+  height: auto;
+  width: 122px;
 }
-.container-footer div {
+.container-footer .Copyright {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -26,4 +27,15 @@
   justify-content: center;
   padding-top: 20px;
   color: #FFFFFF;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 700px) {
+  .container-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .container-footer .Copyright {
+    font-size: 3.5vw;
+  }
 }/*# sourceMappingURL=Footer.css.map */

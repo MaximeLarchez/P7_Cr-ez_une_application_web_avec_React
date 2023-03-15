@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.InfoContainer {
+  position: relative;
+}
+
+.ContainerUserInfo {
+  display: flex;
+  justify-content: right;
+}
+.ContainerUserInfo .HostName {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  font-size: 18px;
+  width: -moz-min-content;
+  width: min-content;
+}
+.ContainerUserInfo .ProfilPicture {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  display: flex;
+  border-radius: 50%;
+  width: 70px;
+}
+
+.Title {
+  display: flex;
+  justify-content: left;
+  color: #FF6060;
+  font-size: 36px;
+  font-family: 🇲🇸;
+  margin: 10px 0px 10px 40px;
+}
+
+.Location {
+  display: flex;
+  justify-content: left;
+  color: #FF6060;
+  font-size: 18px;
+  font-family: 🇲🇸;
+  margin: 0px 0px 20px 40px;
+}
+
+.Container-tags {
+  display: flex;
+  justify-content: first baseline;
+  flex-wrap: wrap;
+  width: 30%;
+  flex-basis: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.Container-tags .Tags {
+  background-color: #FF6060;
+  display: flex;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  font-family: 🇲🇸;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1010px) {
+  .Title {
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .Location {
+    margin: 0;
+    margin-left: 15px;
+  }
+  .Container-tags {
+    width: 100%;
+    padding: 15px;
+  }
+  .ContainerUserInfo {
+    height: 50px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+  .ContainerUserInfo .HostName {
+    position: static;
+    margin: 0;
+  }
+  .ContainerUserInfo .ProfilPicture {
+    position: static;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0;
+    width: 50px;
+  }
+}/*# sourceMappingURL=InfoLogement.css.map */

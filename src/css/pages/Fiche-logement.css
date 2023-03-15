@@ -1,0 +1,63 @@
+.Container-Accordeon {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.Container-Accordeon .Description {
+  flex-basis: 50%;
+  margin-left: 40px;
+}
+.Container-Accordeon .Description .accordeon_Title {
+  width: 92%;
+}
+.Container-Accordeon .Description .accordeon_content {
+  flex-basis: 90%;
+  color: #FF6060;
+}
+.Container-Accordeon .Equipement {
+  flex-basis: 50%;
+  justify-content: center;
+  margin-left: 40px;
+}
+.Container-Accordeon .Equipement .accordeon_Title {
+  width: 92%;
+}
+.Container-Accordeon .Equipement .accordeon_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 90%;
+  color: #FF6060;
+}
+.Container-Accordeon .Equipement-Container {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-left: 0;
+}
+.Container-Accordeon .Equipement {
+  text-align: left;
+  list-style: none;
+}
+
+@media screen and (max-width: 1010px) {
+  .Container-Accordeon {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .Container-Accordeon .Description {
+    margin: 0;
+    flex-basis: 90%;
+  }
+  .Container-Accordeon .Description .accordeon_content {
+    flex-basis: 90%;
+  }
+  .Container-Accordeon .Equipement {
+    margin: 0;
+    flex-basis: 90%;
+  }
+  .Container-Accordeon .Equipement .accordeon_content {
+    flex-basis: 90%;
+  }
+}/*# sourceMappingURL=Fiche-logement.css.map */

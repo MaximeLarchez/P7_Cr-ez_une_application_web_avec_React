@@ -1,0 +1,95 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Container .carousel {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  position: relative;
+  height: 430px;
+}
+.Container .carousel .carousel-container {
+  display: flex;
+  flex-basis: 95%;
+  height: 430px;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.Container .carousel .carousel-container img {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+.Container .carousel .carousel-container .NumberPictures {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin: 0;
+  opacity: 1;
+  z-index: 1;
+  color: white;
+  font-size: 2vw;
+}
+.Container .carousel .carousel-container.active {
+  opacity: 1;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Container .carousel .carousel-container.hidden {
+  display: none;
+}
+.Container .Button {
+  z-index: 1;
+}
+.Container .Button .Previous {
+  position: absolute;
+  left: 50px;
+  top: 290px;
+  background: none;
+  border: none;
+}
+.Container .Button .Next {
+  position: absolute;
+  right: 50px;
+  top: 290px;
+  background: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Container .Button .Previous {
+    top: 210px;
+    left: 10px;
+  }
+  .Container .Button .Previous .ArrowPrevious {
+    width: 4vw;
+  }
+  .Container .Button .Next {
+    top: 210px;
+    right: 10px;
+  }
+  .Container .Button .Next .ArrowNext {
+    width: 4vw;
+  }
+  .Container .carousel {
+    height: 260px;
+  }
+  .Container .carousel .carousel-container {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .Container .carousel .carousel-container img {
+    border-radius: 10px;
+    position: relative;
+  }
+}/*# sourceMappingURL=Carousel.css.map */

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.Accordeon_About {
+  justify-content: center;
+}
+.Accordeon_About .false {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Accordeon_About .active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #FF6060;
+}
+
+.accordeon_Title {
+  border: 1px solid #FF6060;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: left;
+  background-color: #FF6060;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  font-family: 🇲🇸;
+  font-size: 24px;
+}
+.accordeon_Title img {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 15px;
+}
+
+.accordeon_Title:hover {
+  cursor: pointer;
+}
+
+.false .accordeon_content {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.false .accordeon_content .active .accordeon_content {
+  visibility: visible;
+  padding: 10px;
+}
+
+.accordeon_content_bg {
+  display: flex;
+  flex-basis: 81%;
+  font-size: 24px;
+}
+.accordeon_content_bg .accordeon_content {
+  padding: 20px;
+  font-family: 🇲🇸;
+  background-color: #F6F6F6;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=AccordeonAbout.css.map */
