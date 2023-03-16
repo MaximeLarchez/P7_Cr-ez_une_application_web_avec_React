@@ -15,10 +15,13 @@ import Carousel from '../components/Carousel';
 const logement = () => {
     const id = getIdFromUrl();
     const logementInfos = data.find(logement => logement.id === id)
-
+    
+    //Si logementInfos n'est pas definie le code à l'interieur ne s'executera pas sinon le code suivant s'executera 
     if (logementInfos !== undefined) {
+        // Créer une variable qui contient les equipements 
         const equipements =
             <ul className='Equipement-Container'>
+                {/* On utilisant map sur logementInfo.equipement */}
                 {logementInfos.equipments.map((equipement, index) => (
                     <li key={index} className='Equipement'>
                         {equipement}

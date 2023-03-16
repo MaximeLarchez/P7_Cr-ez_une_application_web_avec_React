@@ -1,0 +1,11 @@
+*,
+::before,
+::after {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../assets/Font/Montserrat-Medium.ttf");
+  font-family: "MontSerrat";
+}/*# sourceMappingURL=main.css.map */

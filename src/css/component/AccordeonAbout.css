@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .Accordeon_About {
   justify-content: center;
 }
@@ -26,7 +25,6 @@
   border-radius: 5px;
   position: relative;
   color: white;
-  font-family: 🇲🇸;
   font-size: 24px;
 }
 .accordeon_Title img {
@@ -58,7 +56,6 @@
 }
 .accordeon_content_bg .accordeon_content {
   padding: 20px;
-  font-family: 🇲🇸;
   background-color: #F6F6F6;
   margin-bottom: 20px;
 }/*# sourceMappingURL=AccordeonAbout.css.map */
