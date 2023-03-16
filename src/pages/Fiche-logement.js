@@ -21,15 +21,16 @@ const logement = () => {
         // Créer une variable qui contient les equipements 
         const equipements =
             <ul className='Equipement-Container'>
-                {/* On utilisant map sur logementInfo.equipement */}
+                {/* On utilisant map sur logementInfo.equipement pour afficher les equipements */}
                 {logementInfos.equipments.map((equipement, index) => (
                     <li key={index} className='Equipement'>
                         {equipement}
                     </li>
                 ))}
             </ul>
-
+        // variable qui recupere les données de pictures
         let Pictures = logementInfos.pictures
+        // variable qui recupere les données de description
         const description = logementInfos.description
 
         return (
