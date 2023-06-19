@@ -29,7 +29,7 @@ const Carousel = ({ Pictures }) => {
   return (
     <div className='Container'>
       <div className="carousel">
-        {/* On utilise .map pour parcourir chaque élément du tableau Pictures et retourner un nouveau tableau Picture et son index est son indice dans le tableau */}
+        {/* On utilise .map pour parcourir chaque élément du tableau Pictures et retourner un nouveau tableau Picture et son index represente son indice dans le tableau */}
         {Pictures.map((Picture, index) => (
           <div
             // on ajoute une key unique appelé index qui est égal à l'indice de l'élément

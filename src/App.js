@@ -16,6 +16,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path='/P7_Creez_une_application_web_avec_React/' element = {<Home/>}/>
                 <Route path='/' element = {<Home/>}/>
                 <Route path='/about' element = {<About/>}/>
                 <Route path='/logement/:id' element = {<Logement/>}/>
